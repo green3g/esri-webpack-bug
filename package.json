@@ -17,12 +17,7 @@
     "serve": "http-server -c-1 -p9000",
     "start": "webpack-dev-server --mode=development --progress --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js --progress",
-    "deploy": "npm run build",
-    "postdeploy": "node ./scripts/deploy",
-    "staging": "webpack --config webpack.staging.js --progress",
-    "poststaging": "npm run postdeploy",
-    "license": "webpack --config licenses/webpack.licenses.js",
-    "postversion": "git push && git push --tags"
+    "deploy": "npm run build"
   },
   "main": "./src/index.js",
   "dependencies": {
