@@ -10,7 +10,7 @@ const modules = {
     get(name) {
         return this[name]().then((module) => module.default);
     },
-    basemap: () => import('esri/widgets/BasemapGallery'),
+    // basemap: () => import('esri/widgets/BasemapGallery'),
     feature: () => import('esri/layers/FeatureLayer'),
     map: () => import('esri/Map'),
     view: () => import('esri/views/MapView'),
@@ -22,9 +22,9 @@ const modules = {
 Promise.all([
     modules.get('map'),
     modules.get('view'),
-    modules.get('basemap'),
     modules.get('feature'),
-]).then(([Map, MapView, BasemapGallery, FeatureLayer]) => {
+    // modules.get('basemap'),
+]).then(([Map, MapView, FeatureLayer]) => {
     const fl = new FeatureLayer({
         id: 'states',
         portalItem: {
