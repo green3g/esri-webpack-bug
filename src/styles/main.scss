@@ -1,0 +1,11 @@
+$include_RasterSymbologyEditor: false !default;
+
+@import "~esri/themes/base/colors/scss/variables";
+@import "~esri/themes/base/core";
+
+.esri-view, .esri-view-root {
+    display:flex;
+    min-height:600px;
+    margin:0 !important;
+    padding: 0;
+}

@@ -1,0 +1,2 @@
+# set default text behavior to use lf line endings
+text eol=lf

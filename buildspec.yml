@@ -1,0 +1,39 @@
+version: 0.2
+
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
+phases:
+  install:
+    commands:
+       - npm set registry https://dev.datalink.wsbeng.com/npm/
+       - echo "//dev.datalink.wsbeng.com/npm/:_authToken=${NPM_AUTH}" > .npmrc
+       - npm i
+       - npm i # dojo doesn't install right the first time
+  #pre_build:
+    #commands:
+      # - command
+      # - command
+  build:
+    commands:
+       - npm run deploy
+      # - command
+  #post_build:
+    #commands:
+      # - command
+      # - command
+artifacts:
+  files:
+     - dist/**/*
+    # - location
+  #name: $(date +%Y-%m-%d)
+  #discard-paths: yes
+  #base-directory: location
+#cache:
+  #paths:
+    # - paths

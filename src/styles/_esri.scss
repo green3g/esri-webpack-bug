@@ -1,0 +1,16 @@
+dl-map {
+    display:block;
+    margin:auto;
+}
+
+.esri-view, .esri-view-root {
+    display:flex;
+    min-height:200px;
+    margin:0 !important;
+    padding: 0;
+}
+
+// fix esri popup docking issue on ipad
+.esri-popup--is-docked-bottom-right > .esri-popup__main-container {
+    right: 0;
+}
