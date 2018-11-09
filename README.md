@@ -13,4 +13,13 @@ VM112364:1 Access to XMLHttpRequest at 'file:///C:/Users/<username>/web/datafi/n
 Logger.js?aac4:25 [esri.core.workers] Failed to create Worker. Fallback to execute module in main thread t {name: "request:server", message: "Unable to load C:/Users/<username>/web/datafi/node_modules/arcgis-js-api/core/workers/worker.js status: 0", details: {…}}
 
 ....
+
+## Build for productions
+
+```
+
+If you don't get the error in dev, you should probably get it in production. To build for production type
+
+```
+npm run deploy
 ```

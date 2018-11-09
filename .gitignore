@@ -29,6 +29,5 @@ node_modules
 node_modules_old
 
 # DoneJS
-dist/
 cache/
 docs/
